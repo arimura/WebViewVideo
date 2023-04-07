@@ -34,8 +34,14 @@ public class MainActivity extends AppCompatActivity {
                 "    </style>" +
                 "</head>" +
                 "<body>" +
-//                "    <video src=\"path/to/video.mp4\" controls></video>" +
-                "    <video autoplay src=\"http://192.168.86.136:8000/Dish.mp4\" poster=\"data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7\" controls></video>" +
+//                "    <video id=\"videoElement\" src=\"http://192.168.86.136:8000/Dish.mp4\" autoplay muted playsinline></video>" +
+                "    <video id=\"videoElement\" src=\"http://192.168.86.136:8000/Dish.mp4\" poster=\\\"data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7\\\" autoplay muted playsinline></video>" +
+                "    <script>" +
+                "        var video = document.getElementById('videoElement');" +
+                "        video.addEventListener('loadeddata', function() {" +
+                "            video.play();" +
+                "        });" +
+                "    </script>" +
                 "</body>" +
                 "</html>";
 
