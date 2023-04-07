@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 "    </style>" +
                 "</head>" +
                 "<body>" +
-                "    <video src=\"path/to/video.mp4\" controls></video>" +
-//                "    <video src=\"path/to/video.mp4\" poster=\"data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7\" controls></video>" +
+//                "    <video src=\"path/to/video.mp4\" controls></video>" +
+                "    <video src=\"path/to/video.mp4\" poster=\"data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7\" controls></video>" +
                 "</body>" +
                 "</html>";
 
