@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         // Enable JavaScript and set WebChromeClient
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setMediaPlaybackRequiresUserGesture(false);
         webView.setWebChromeClient(new WebChromeClient());
 
         // Load HTML with video element
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 "</head>" +
                 "<body>" +
 //                "    <video src=\"path/to/video.mp4\" controls></video>" +
-                "    <video src=\"path/to/video.mp4\" poster=\"data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7\" controls></video>" +
+                "    <video autoplay src=\"http://192.168.86.136:8000/Dish.mp4\" poster=\"data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7\" controls></video>" +
                 "</body>" +
                 "</html>";
 
